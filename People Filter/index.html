@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People Filter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>People Filter</h1>
+        <div class="filters">
+            <label for="age-filter">Age:</label>
+            <select id="age-filter">
+                <option value="">All</option>
+                <option value="20">More than 20</option>
+                <option value="30">More than 30</option>
+                <option value="40">More than 40</option>
+                <option value="50">More than 50</option>
+                <option value="60">More than 60</option>
+            </select>
+
+            <div class="gender-filter">
+                <label>Gender:</label>
+                <input type="radio" name="gender" value="male"> male
+                <input type="radio" name="gender" value="female"> female
+            </div>
+
+            <label for="starts-with-filter">Starts with:</label>
+            <select id="starts-with-filter" multiple>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="G">G</option>
+                <option value="H">H</option>
+                <option value="I">I</option>
+                <option value="J">J</option>
+                <option value="K">K</option>
+                <option value="L">L</option>
+                <option value="M">M</option>
+                <option value="N">N</option>
+                <option value="O">O</option>
+                <option value="P">P</option>
+                <option value="Q">Q</option>
+                <option value="R">R</option>
+                <option value="S">S</option>
+                <option value="T">T</option>
+                <option value="U">U</option>
+                <option value="V">V</option>
+                <option value="W">W</option>
+                <option value="X">X</option>
+                <option value="Y">Y</option>
+                <option value="Z">Z</option>
+                <!-- Add other letters as options -->
+            </select>
+        </div>
+
+        <div class="people-list" id="people-list">
+            <!-- People will be dynamically added here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
